@@ -1,68 +1,39 @@
-# Snappy - Chat Application 
-Snappy is chat application build with the power of MERN Stack. You can find the tutorial [here](https://www.youtube.com/watch?v=otaQKODEUFs)
+# Chatify – Real-Time Chat Application
 
+Chatify is a full-stack real-time chat application that enables users to communicate instantly through a modern and responsive interface.  
+The application is designed to demonstrate real-time communication, authentication, and scalable backend architecture.
 
-![login page](./images/snappy_login.png)
+---
 
-![home page](./images/snappy.png)
+## ✨ Features
+- User registration and login
+- Real-time one-to-one messaging
+- Online user status
+- Secure authentication using JWT
+- Clean and responsive user interface
+- Persistent chat history
 
-## Installation Guide
+---
 
-### Requirements
-- [Nodejs](https://nodejs.org/en/download)
-- [Mongodb](https://www.mongodb.com/docs/manual/administration/install-community/)
+## 🛠 Tech Stack
 
-Both should be installed and make sure mongodb is running.
-### Installation
+### Frontend
+- React.js
+- Styled Components
+- Axios
 
-#### First Method
-```shell
-git clone https://github.com/koolkishan/chat-app-react-nodejs
-cd chat-app-react-nodejs
-```
-Now rename env files from .env.example to .env
-```shell
-cd public
-mv .env.example .env
-cd ..
-cd server
-mv .env.example .env
-cd ..
-```
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+- Socket.IO
+- JWT (JSON Web Token)
 
-Now install the dependencies
-```shell
-cd server
-yarn
-cd ..
-cd public
-yarn
-```
-We are almost done, Now just start the development server.
+---
 
-For Frontend.
-```shell
-cd public
-yarn start
-```
-For Backend.
-
-Open another terminal in folder, Also make sure mongodb is running in background.
-```shell
-cd server
-yarn start
-```
-Done! Now open localhost:3000 in your browser.
-
-#### Second Method
-- This method requires docker and docker-compose to be installed in your system.
-- Make sure you are in the root of your project and run the following command.
-
-```shell
-docker compose build --no-cache
-```
-after the build is complete run the containers using the following command
-```shell
-docker compose up
-```
-now open localhost:3000 in your browser.
+## 📂 Project Structure
+```text
+Chat-App/
+├── public/        # Frontend (React)
+├── server/        # Backend (Node.js + Express)
+└── README.md
